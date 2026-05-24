@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qwertz</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="icon" href="assets/logo.png">
+</head>
+<body>
+    <h1 class="projects__header">Projects</h1>
+    <div class="projects__line"></div>
+
+    <div class="projects__cards">
+        <div class="projects__card">
+            <h1>Soon</h1>
+            <p>soon</p>
+            <a href="/projects.html" class="projects__view">
+                View Project
+            </a>
+        </div>
+        <div class="projects__card">
+            <h1>Soon</h1>
+            <p>soon</p>
+            <a href="/projects.html" class="projects__view">
+                View Project
+            </a>
+        </div>
+        <div class="projects__card">
+            <h1>Soon</h1>
+            <p>soon</p>
+            <a href="/projects.html" class="projects__view">
+                View Project
+            </a>
+        </div>
+    </div>
+
+    <a class="back__home" href="/index.html">Back Home</a>
+
+
+
+    <script>
+        const fullText = "@ Qwertz";
+        let indexText = 0;
+        function animateTitle() {
+    indexText++;
+
+    if (indexText > fullText.length) {
+        indexText = 1;
+    }
+
+        document.title = fullText.substring(0, indexText);
+        }
+
+        setInterval(animateTitle, 700);
+    </script>
+</body>
+</html>
